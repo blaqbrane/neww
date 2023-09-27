@@ -90,7 +90,7 @@ const FallingStars = () => {
           alt={`Star ${index + 1}`}
           initial={{
             opacity: 0,
-            x: "10vw",
+            x: "50vw",
             y: -30, // Start above the screen
             rotate: -16,
           }}
