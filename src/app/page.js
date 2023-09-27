@@ -1,16 +1,16 @@
 'use client'
 import Image from 'next/image'
-import icon1 from './assets/AI Tools Website Assets/Group 1000008597.png'
-import icon2 from './assets/AI Tools Website Assets/Ellipse 91-4.png'
-import icon3 from './assets/AI Tools Website Assets/Ellipse 91-2.png'
-import icon4 from './assets/AI Tools Website Assets/Ellipse 91-1.png'
-import icon5 from './assets/AI Tools Website Assets/Group 1000008555.png'
+import icon1 from './assets/Group8597.png'
+import icon2 from './assets/Ellipse4.png'
+import icon3 from './assets/Ellipse2.png'
+import icon4 from './assets/Ellipse1.png'
+import icon5 from './assets/Group5.png'
 import drain from './assets/AI Tools Website Assets/Grains.png'
 // import icon6 from './assets/AI Tools Website Assets/Ellipse 91-2.png'
 // import icon7 from './assets/AI Tools Website Assets/Ellipse 91-2.png'
 import { useEffect } from 'react';
 import iss from "./assets/globe2.jpeg"
-import abouts from "./assets/AI Tools Website Assets/Group 1000008557.png"
+import abouts from "./assets/Group7.png"
 import FallingStars from './components/FallingStar'
 
 

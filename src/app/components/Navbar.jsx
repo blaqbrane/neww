@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import drain from "../assets/AI Tools Website Assets/Layer 2.png";
+import drain from "../assets/Layer2.png";
 
 import { useState } from "react";
 const Navbar = () => {
