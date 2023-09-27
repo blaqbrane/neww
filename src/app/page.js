@@ -5,11 +5,11 @@ import icon2 from './assets/Ellipse4.png'
 import icon3 from './assets/Ellipse2.png'
 import icon4 from './assets/Ellipse1.png'
 import icon5 from './assets/Group5.png'
-import drain from './assets/AI Tools Website Assets/Grains.png'
+import drain from './assets/Grains.png'
 // import icon6 from './assets/AI Tools Website Assets/Ellipse 91-2.png'
 // import icon7 from './assets/AI Tools Website Assets/Ellipse 91-2.png'
 import { useEffect } from 'react';
-import iss from "./assets/globe2.jpeg"
+import iss from "./assets/glbss.png"
 import abouts from "./assets/Group7.png"
 import FallingStars from './components/FallingStar'
 import { Carousel } from 'react-responsive-carousel'
@@ -30,6 +30,7 @@ export default function Home() {
       <p className='text-center text-3xl'>Everything,Everyone with AI</p>
       <button className='flex mx-auto border border-[gray] rounded-md bg-[#302e2e] mt-3 p-2'>Get Early Access</button>
       {/* <Carousel /> */}
+      <div class="bg-gradient-to-t absolute bottom-0 from-gray-200 to-transparent h-24"></div>
       <Carousel showArrows={false} showStatus={false} showThumbs={false} infiniteLoop>
         <div class=" mt-24 flex flex-col justify-center items-center relative h-[500px] ">
           <div class="mt-4 flex absolute inset-0 justify-around items-center rounded-full icon-container">
@@ -75,63 +76,17 @@ export default function Home() {
           </div>
 
 
-          <div class="mt-20 w-1/2 h-1/2 md:h-3/4 lg:h-5/6 md:w-3/4 lg:w-5/6 xl:h-[83%] xl:w-[83%]">
+          <div class="mt-32 w-1/2  h-1/2 md:h-3/4 lg:h-5/6 md:w-3/4 lg:w-5/6 xl:h-[83%] xl:w-[83%]">
 
-            <Image src={iss} alt="Globe" className="w-full h-[600px] rounded-t-full" />
+            <Image src={iss} alt="Globe" className="w-full object-cover h-[600px] rounded-t-full" />
           </div>
 
-
-
+        </div>
+        <div className='-mt-40 border-none '>
+          <Image src={drain} alt='' />
         </div>
       </Carousel>
-      {/* <div className='relative  h-[300px] flex justify-center py-10 mt-52'>
-        <div className='relative '>
-          <Image
-            src={iss}
-            alt="Image"
-            className="md:rounded-t-full rounded-full  mt-6 md:mt-0 w-[150px] h-[150px] md:w-[1200px] md:h-[1200px] md:overflow-hidden"
 
-          />
-         
-
-          <div className='absolute top-0 left-96 z-10 w-52 h-52'>
-            <Image
-              src={abouts}
-              alt="Image"
-              className="rounded-full "
-
-            />
-            <Image src={icon1} className='absolute top-[10px] left-[140px]' />
-          </div>
-          <div className='absolute bottom-25 z-10 left-6 md:left-[250px] w-40 h-40'>
-            <Image src={icon2} className='' />
-          </div>
-          <div className='absolute bottom-25 -right-5 md:right-[200px] z-10 w-40 h-40'>
-            <Image src={icon4} className='' />
-          </div>
-          <div className='absolute bottom-[-100px] right-[80px] z-10 w-40 h-40'>
-            <Image src={icon5} className='' />
-          </div>
-          <div className='absolute bottom-[-100px] left-[100px] z-10 w-40 h-40'>
-            <Image src={icon3} className='' />
-          </div>
-          <div>
-            <Image src='' alt='' />
-          </div>
-
-        </div> */}
-
-
-      {/* <div className='absolute bottom-[-200px] left-[180px] z-10 w-40 h-40'>
-          
-        </div>
-         */}
-
-      {/* </div> */}
-
-      {/* <div className='absolute left-0 -top-40 w-full'>
-        <Image src={drain} className='' />
-      </div> */}
     </main>
   )
 }
