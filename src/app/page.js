@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import icon1 from './assets/Group8597.png'
 import icon2 from './assets/Ellipse4.png'
-import icon3 from './assets/Ellipse2.png'
-import icon4 from './assets/Ellipse1.png'
+import icon8 from './assets/Profile.png'
+import icon3 from './assets/Group22.png'
+import icon4 from './assets/Group1.png'
 import icon5 from './assets/Group5.png'
 import drain from './assets/Grains.png'
 // import icon6 from './assets/AI Tools Website Assets/Ellipse 91-2.png'
@@ -56,7 +57,7 @@ export default function Home() {
             </div>
 
 
-            <div class="w-16 h-16 rounded-full absolute top-[4%] right-[30%] icon-item">
+            <div class="w-20 h-20 rounded-full absolute top-[4%] right-[30%] icon-item">
               <Image src={icon3} className='' />
             </div>
 
@@ -68,7 +69,7 @@ export default function Home() {
               <Image src={icon5} className='' />
             </div>
             <div class="w-16 h-16  rounded-full absolute top-[35%] left-[14%] icon-item">
-              <Image src={icon4} className='' />
+              <Image src={icon2} className='' />
             </div>
             <div class="w-16 h-16  rounded-full absolute top-[35%] right-[14%] icon-item">
               <Image src={icon2} className='' />
