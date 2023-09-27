@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 14, 2, 14;
+  --background-end-rgb: 14, 2, 14;
+}
+
+.bg {
+  color: rgb(14, 2, 14)
+}
+
+
+body {
+  position: relative;
+  color: white;
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background-image: url('/Grains.png');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+} */
+
+.container {
+  position: relative;
+  width: 200%;
+
+}
+
+.wrapper {
+  position: relative;
+
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 100%;
+  background-color: red;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.item.active {
+  background-color: blue;
+}
+
+svg {
+  height: 200%;
+
+  width: 200%;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.st0 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 1;
+  width: 200%;
+}
+
+.start {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+}
+
+.center-image {
+  position: absolute;
+  /* Position the image absolutely within its parent */
+  top: 50%;
+  /* Move the top edge to the middle of the parent */
+  left: 50%;
+  /* Move the left edge to the middle of the parent */
+  transform: translate(-50%, -50%);
+  /* Center the image exactly in the middle */
+}
+
+.non-rotating {
+  rotate: 0deg;
+  transform: rotate(0deg) !important;
+  /* Apply no rotation to the image */
+}

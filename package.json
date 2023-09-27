@@ -1,0 +1,30 @@
+{
+  "name": "whoopme",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^8.14.3",
+    "framer-motion": "^10.16.4",
+    "gsap": "^3.12.2",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-icons": "^4.11.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "three": "^0.156.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}
