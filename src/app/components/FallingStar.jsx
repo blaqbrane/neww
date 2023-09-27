@@ -13,12 +13,12 @@ const FallingStars = () => {
   return (
     <div
       style={{
-        position: "fixed", // Use fixed positioning
+        position: "fixed",
         top: 0,
         left: 0,
         width: "100%",
         height: "100vh",
-        pointerEvents: "none", // Prevent stars from capturing clicks
+        pointerEvents: "none",
         zIndex: 9999,
       }}
     >
@@ -29,18 +29,19 @@ const FallingStars = () => {
           alt={`Star ${index + 1}`}
           initial={{
             opacity: 0,
-            x: `${index % 2 === 0 ? "-" : ""}${Math.random() * 100}%`,
-            y: -100,
-            rotate: 0,
+            x: "10vw",
+            y: -30, // Start above the screen
+            rotate: -14,
           }}
           animate={{
             opacity: 1,
-            y: "100vh",
-
+            x: -200, // Random horizontal position
+            y: "100vh", // Move to the bottom of the screen
             transition: {
-              duration: 5,
+              duration: 2 + Math.random() * 5, // Vary duration
               repeat: Infinity,
               delay: index * 1,
+              ease: "linear", // Use linear easing for a smooth trajectory
             },
           }}
           style={{
