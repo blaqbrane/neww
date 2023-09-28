@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import icon1 from './assets/Group8597.png'
 import icon2 from './assets/Ellipse4.png'
-import icon8 from './assets/Profile.png'
+// import icon8 from './assets/Profile.png'
 import icon3 from './assets/Group22.png'
 import icon4 from './assets/Group1.png'
 import icon5 from './assets/Group5.png'
@@ -22,7 +22,7 @@ export default function Home() {
     // initIconRotation(); // Call the script when the component mounts
   }, []);
   return (
-    <main className="md:max-w-[1240] h-[460px] overflow-hidden mt-16 relative" >
+    <main className="md:max-w-[1240] h-[460px] lg:h-[460px]  xl:h-[500px]  overflow-hidden mt-16 relative" >
       <div className=''>
         <FallingStars />
       </div>
@@ -36,7 +36,7 @@ export default function Home() {
         <div class=" mt-24 flex flex-col justify-center items-center relative h-[500px] ">
           <div class="mt-4 flex absolute inset-0 justify-around items-center rounded-full icon-container">
 
-            <div class="w-32 h-32 rounded-full absolute top-[-10%] md:right-[30%] lg:right-[30%] transform -translate-x-1/2">
+            <div class="w-32 h-2 rounded-full absolute top-[-10%] md:right-[30%] lg:right-[30%] transform -translate-x-1/2">
               <Image src={icon1} alt='' />
 
             </div>
@@ -79,13 +79,13 @@ export default function Home() {
 
           <div class="mt-32 w-1/2  h-1/2 md:h-3/4 lg:h-5/6 md:w-3/4 lg:w-5/6 xl:h-[83%] xl:w-[83%]">
 
-            <Image src={iss} alt="Globe" className="w-full object-cover h-[600px] rounded-t-full" />
+            <Image src={iss} alt="Globe" className="w-full  h-[600px] xl:h-[1200px]  rounded-t-full" />
           </div>
 
         </div>
-        <div className='-mt-40 border-none '>
+        {/* <div className='-mt-40 border-none '>
           <Image src={drain} alt='' />
-        </div>
+        </div> */}
       </Carousel>
 
     </main>
