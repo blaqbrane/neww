@@ -9,20 +9,20 @@ const Navbar = () => {
   return (
     <div className="px-6 md:px-40 flex py-8 justify-between items-center">
       <a href="/">
-        <h1 className="font-bold text-xl">
-          <Image src={drain} alt="" className="w-32 md:w-auto" />
+        <h1 className="font-bold text-xl xl:text-2xl">
+          <Image src={drain} alt="" className="w-32 md:w-auto xl:w-48" />
         </h1>
       </a>
-      <div className="flex gap-2">
-        <button className="hidden md:block px-10 border border-white rounded-[8px] py-2 ">
+      <div className="flex gap-2 xl:gap-3">
+        <button className="hidden outline-none md:block px-10 xl:px-20 xl:text-2xl xl:py-4  border border-white rounded-[8px] py-2 ">
           Sign in
         </button>
-        <button className="hidden md:block px-10 py-2 rounded-[10px] bg-gradient-to-r from-[#fd0000] to-[orange]">
+        <button className="hidden outline-none md:block px-10 py-2 xl:px-20 xl:text-2xl xl:py-4 rounded-[10px] bg-gradient-to-r from-[#fd0000] to-[orange]">
           Sign up
         </button>
         <div
           onClick={() => setShow(!show)}
-          className="px-3 py-3 bg-[#575555] rounded-[10px] grid grid-cols-2 gap-2"
+          className="px-3 py-3 xl:px-6 xl:py-5 bg-[#575555] rounded-[10px] grid grid-cols-2 gap-2"
         >
           <button className="bg-white w-[6px] h-[6px] rounded-full"></button>
           <button className="bg-white w-[6px] h-[6px] rounded-full"></button>

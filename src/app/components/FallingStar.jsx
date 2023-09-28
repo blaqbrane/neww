@@ -96,7 +96,7 @@ const FallingStars = () => {
           }}
           animate={{
             opacity: [0, 1, 0], // Fading effect
-            scale: [1, 0.2], // Scaling effect
+            scale: [0.3, 1, 0.2], // Scaling effect
             x: -200, // Random horizontal position
             y: "80vh", // Move to the bottom of the screen
             transition: {
@@ -113,6 +113,7 @@ const FallingStars = () => {
             top: 0,
             left: `${index * (100 / starImages.length)}%`,
           }}
+          className="xl:w-[400px]"
         />
       ))}
     </div>
