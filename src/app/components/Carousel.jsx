@@ -5,7 +5,25 @@
 // import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 // import iss from "../assets/globe2.jpeg";
 // import Image from "next/image";
+ /// const [currentSlide, setCurrentSlide] = useState(0);
+  /// const slidesRef = useRef([]);
 
+  // function goToSlide(n) {
+  //   slidesRef.current[currentSlide].className = 'icon-item';
+  //   setCurrentSlide((n + slidesRef.current.length) % slidesRef.current.length);
+  //   slidesRef.current[currentSlide].className = 'icon-item showing';
+  // }
+
+  // function handleNextClick() {
+  //   goToSlide(currentSlide + 1);
+  // }
+
+  // function handlePrevClick() {
+  //   goToSlide(currentSlide - 1);
+  // }
+  // useEffect(() => {
+  //   // initIconRotation(); // Call the script when the component mounts
+  // }, []);
 // const Carousel = () => {
 //   const imageRef = useRef(null);
 //   useEffect(() => {

@@ -12,7 +12,10 @@
   color: rgb(14, 2, 14)
 }
 
-
+html,body{
+  min-height: 100%;
+  min-width: 100%;
+}
 body {
   position: relative;
   color: white;
@@ -27,12 +30,6 @@ body {
   padding: 0;
 }
 
-/* body {
-  background: #fff;
-  margin: 0;
-  padding: 0;
-  position: relative;
-} */
 
 .container {
   position: relative;
@@ -104,3 +101,37 @@ svg {
   transform: rotate(0deg) !important;
   /* Apply no rotation to the image */
 }
+
+/* .icon-container{
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  animation: rotate 5s infinite linear;
+  /* animation: rotation 10s infinite linear; */
+
+
+
+/* .icon-item {
+  position: absolute;
+  transform: rotateY(0deg) translateZ(-500px);
+  transition: transform 1s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+} */ 
